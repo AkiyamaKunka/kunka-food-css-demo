@@ -3,6 +3,11 @@
 /*------------BASIC SETUP--------------*/
 /*-------------------------------------*/
 
+/*
+Orange Color: #e67e22
+Dimmed Orange Color: #cf6d17
+*/
+
 * {
     margin:0 ;
     padding:0 ;
@@ -10,7 +15,7 @@
 }
 
 html {
-    background-color: #6c6868;
+    background-color: #fff;
     color: #5e5d5d;
     font-family: 'Lato', 'Arial', sans-serif;
     font-size: 20px;
@@ -35,6 +40,11 @@ header{
     margin: 0 auto;
 }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
 
 /*---------------BUTTONS---------------*/
@@ -141,12 +151,167 @@ h1 {
 }
 
 
-/*
-Orange Color: #e67e22
-Dimmed Orange Color: #cf6d17
-*/
+
 
 /*---------------SLOGAN----------------*/
 
+section {
+    padding: 60px 0;
+}
 
+.section-features{
+    color: #282727;
+    background-color: #fff;
+}
+
+.sub-slogan{
+    float: left;
+    width: 25%;
+}
+
+
+/*--------------PARAGRAPH-------------*/
+
+
+.long-copy{
+    line-height: 150%;
+    width: 70%;
+    margin: 40px auto 60px auto;
+}
+.sub-long-copy{
+    line-height: 150%;
+    width: 100%;
+    font-size: 90%;
+
+}
+
+.box {
+    padding: 1%;
+}
+
+h2 {
+    color:  #282727;
+    font-size: 150%;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h2:after{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e67e22;
+    display: block;
+    height: 2px;
+    width: 100px;
+    content: "";
+}
+
+.section-features h3 {
+    color:  #282727;
+    font-size: 115%;
+    font-weight: 500;
+    text-transform: uppercase;
+    /*letter-spacing: 1px;*/
+    word-spacing: 1px;
+    padding: 7px 0;
+    margin-bottom: 5px;
+}
+
+/*---------------ICONS--------------*/
+
+ion-icon {
+    font-size: 350%;
+    color: #e67e22;
+    padding: 0 0 5px 0;
+    display: block;
+}
+
+/*------------MEAL-SHOWCASE---------*/
+
+.meal-showcase {
+
+    width: 100%;
+    padding-top: 0;
+}
+
+.meal-showcase ul{
+
+    display: block;
+    list-style: none;
+}
+
+.meal-showcase li{
+    display: block;
+    width: 25%;
+    float: left;
+    overflow: hidden;
+    background-color: #000;
+    /*which can prevent sub element from overflowing the window*/
+}
+.meal-showcase img{
+    opacity: 0.7;
+    width: 100%;
+    margin: 0;
+    transition: transform 0.5s, opacity 0.5s;
+}
+.meal-showcase img:hover,
+.meal-showcase img:active {
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+/*------------WORK-SECTION----------*/
+
+
+
+.step-box{
+    display: block;
+}
+
+.step-box:nth-child(1) {
+    /*text-align: right;*/
+    /*does not only applied to text, but all elements?*/
+    padding-right: 3%;
+    margin-top: 30px;
+}
+.step-box:last-child{
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.app-screen {
+    display: block;
+    margin: 0 30px 0 auto;
+    width: 40%;
+}
+.work-step div{
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    font-size: 150%;
+    padding: 5px;
+    float: left;
+    margin-right: 10px;
+}
+
+.work-step{
+    padding: 0 0 65px 0;
+}
+.work-step:last-of-type{
+    padding: 0 0 30px 0;
+}
+
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin-right: 30px;
+}
 
